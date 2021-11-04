@@ -1,10 +1,10 @@
 import React from "react";
-import { Text, View, Image, TextInput} from "react-native";
+import { Text,StyleSheet, View, Image, TextInput} from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import {Entypo, AntDesign, FontAwesome,FontAwesome5} from '@expo/vector-icons'
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 
-export default function Login({navigation}) {
+export default function signup({navigation}) {
 
   const[show,setShow]= React.useState(false);
   const[visible,setVisible]= React.useState(true);

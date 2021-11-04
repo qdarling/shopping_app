@@ -6,6 +6,8 @@ import {createStackNavigator } from "@react-navigation/stack";
 import Login from "./screens/Login";
 import Home from "./screens/Home";
 import signup from "./screens/signup";
+import GetStarted from "./screens/GetStarted";
+import Cart from "./screens/Cart";
 
 export default function App() {
   const MainNavigator = createStackNavigator();
@@ -18,6 +20,10 @@ export default function App() {
           <MainNavigator.Screen name ="Home" component = {Home} />
           <MainNavigator.Screen name ="Login" component = {Login} />
           <MainNavigator.Screen name ="signup" component={signup}/>
+          <MainNavigator.Screen name ="GetStarted" component={GetStarted}/>
+          <MainNavigator.Screen name ="Cart" component={Cart}/>
+
+
         </MainNavigator.Navigator>
       </NavigationContainer>
     </View>

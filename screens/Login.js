@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Image, TextInput} from "react-native";
+import { Text,StyleSheet, View, Image, TextInput} from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import {Entypo, AntDesign, FontAwesome,} from '@expo/vector-icons'
 import {MaterialCommunityIcons} from '@expo/vector-icons';
@@ -19,7 +19,7 @@ export default function Login({navigation}) {
             marginBottom : 10
             }}
               source={{uri:"https://image.shutterstock.com/image-photo/mens-clothing-set-boots-watch-260nw-1427016581.jpg"}}/>
-            <Text style={{color: '#03cffc', fontsize: 50, fontWeight: "750"}}>
+            <Text style={{color: '#03cffc', fontsize: 50, fontWeight: "600"}}>
             Welcome to Sam's Clothing
             </Text>
 
@@ -67,7 +67,6 @@ export default function Login({navigation}) {
                        setVisible(!visible),
                        setShow(!show)
                      }
-
                       }>
                      
                       <MaterialCommunityIcons
@@ -77,7 +76,9 @@ export default function Login({navigation}) {
                        />
                     </TouchableOpacity>
             </View>
-            <TouchableOpacity style={{marginTop: 10}}>
+                           
+            <TouchableOpacity onPress={()=> navigation.navigate('GetStarted')}
+              style={{marginTop: 10}}>
             <View
                style={{
                 background: '#03cffc',
@@ -102,6 +103,8 @@ export default function Login({navigation}) {
                      }}> Sign up</Text>
                 </TouchableOpacity>
 
+               
+            
         
      
     </View>
