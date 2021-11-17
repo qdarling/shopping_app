@@ -76,7 +76,7 @@ const properties = [
     
     id: 8 ,
     name: "Body Building stinger Singlet",
-    pic:require('../assets/Bodybuilding Stringer.png'),
+    pic:require('../assets/Bodybuilding stringer.png'),
     about:"Available",
     price_tag:"GH 15",
    favourite: true,
@@ -87,7 +87,7 @@ const properties = [
     
     id: 9 ,
     name: "Coloured cardigan",
-    pic:require('../assets/cardigan.png'),
+    pic:require('../assets/Cardigan.png'),
     about:"Available",
     price_tag:"Gh 88",
    favourite: true,
@@ -167,7 +167,7 @@ const properties = [
     pic:require('../assets/tee shirt.png'),
     about:"Available",
     price_tag:"Gh 43",
-   favourite: true,
+   favourite: false,
                
   },
 
@@ -178,6 +178,17 @@ const properties = [
     pic:require('../assets/floral shirt.png'),
     about:"Available",
     price_tag:"Gh 67",
+   favourite: true,
+               
+  },
+
+  {
+    
+    id: 16,
+    name: "Violet shirt",
+    pic:require('../assets/Violet shirt.png'),
+    about:"Available",
+    price_tag:"Gh 28",
    favourite: true,
                
   },
